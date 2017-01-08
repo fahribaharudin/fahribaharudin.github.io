@@ -8,7 +8,7 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700' rel='stylesheet' type='text/css'>
         <style>
             html, body {
-                overflow: hidden;
+                /*overflow: hidden;*/
                 margin: 0;
                 height: 100%;
             }
@@ -70,6 +70,26 @@
             a:hover {
                 color: #f33;
             }
+            hr {
+                margin: 20px 0;
+            }
+            .title {
+                color: #000;
+                font-weight: bold;
+            }
+            .link-red {
+                color: #f33;
+            }
+            img {
+                max-width: 100%;
+            }
+            .thumb {
+                width: 50%;
+                margin: auto;
+            }
+            .item {
+                margin-bottom: 50px;
+            }
         </style>
         <script type="text/javascript">
 
@@ -85,18 +105,46 @@
           })();
 
         </script>
+        <script type="text/javascript" src="https://cdn.rawgit.com/imsky/holder/master/holder.js"></script>
     </head>
     <body>
         <div id="wrapper">
+            <br>
             <h1>Fahri Baharudin</h1>
             <h2>I Am a Passionate Web Developer</h2>
+            <div class="row" style="width: 75%">
+                <h2 class="title">Projects</h1>
+                <hr>
+                <div class="item">
+                    <div class="thumb">
+                        <a href=""><img src="img/kenekono.jpg"></a>
+                    </div>
+                    <h2><a href="" class="link-red">kenekono.com</a></h2>
+                    <p>
+                        Merupakan sebuah digital agency yang didirikan di Wonosobo, Jawa Tengah pada tahun 2012. Saya adalah salah satu co-founder digital agency ini bersama dengan dua orang lainya yang mempunyai peranya masing - masing.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="thumb">
+                        <a href=""><img src="img/thdc.jpg"></a>
+                    </div>
+                    <h2><a href="" class="link-red">temanhidupku.com</a></h2>
+                    <p>
+                        TemanHidupku.com adalah laman web cari jodoh yang dibina oleh komuniti Melayu Muslim di Malaysia. Dibuat menggunakan framework Laravel PHP, Bootstrap, Jquery dan Vuejs.
+                    </p>
+                    <br>    
+                    <p>Di temanhidupku.com saya bekerja sebagai web developer dengan sistem kerja freelance :D</p>
+                </div>
+                <hr>
+            </div>
             <p><a href="aboutme.html" target="_blank">About Me</a></p>
-            <p><a href="projects.html" target="_blank">Projects</a></p>
             <p><a href="https://twitter.com/fahribaharudin" target="_blank">Twitter</a></p>
             <p><a href="https://github.com/fahribaharudin" target="_blank">Github</a></p>
             <p><a href="mailto:fahrybaharudin@gmail.com" target="_blank">Contacts</a></p>
+            <br>
         </div>
-        <canvas></canvas>
+        </div>
+        <!-- <canvas></canvas> -->
         <script>
             document.addEventListener('touchmove', function (e) {
                 e.preventDefault()
